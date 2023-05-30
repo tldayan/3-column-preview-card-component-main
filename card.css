@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 20px;
+    width: min(90%,1000px);
+    margin: 100px auto;
+}
+
+img {
+    padding: 10px 0px;
+}
+
+.card {
+    padding: 30px 50px;
+}
+
+h1 {
+    padding: 20px 0px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+.sedans_card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.suvs_card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury_card {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+
+a:hover {
+    color: white;
+    transition-duration: 0.25s;
+    transform: skewX(180deg);
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: solid 1px white ;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width:1000px) {
+    .container {
+        width: min(90%, 700px);
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+
+    .sedans_card {
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .luxury_card {
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 50px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.attribution > a {
+    text-decoration: none;
+}
+
+.frontendmentor {
+    color: rgb(0, 128, 64);
+}
+
+.author {
+    color: rgb(0, 128, 64);
+}
+
